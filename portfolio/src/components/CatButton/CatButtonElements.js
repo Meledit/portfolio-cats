@@ -25,7 +25,7 @@ export const CatButtonEar = styled.img`
     position: absolute;
     top: ${props => props.isHovered ? "0%" : "25%"};
     left: ${props => props.ear_side == "left" ? "15%" : "70%"};
-    transform: ${props => props.isHovered ? "translateY(-100%)" : "translateX(0)"};
+    transform: ${props => props.isHovered ? "translateY(-90%)" : "translateX(0)"};
     z-index: -10;
 
     width: 20px;

@@ -1,12 +1,12 @@
 import './App.css';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
-import CatButton from './components/CatButton';
+import Home from "./pages/home.js";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route element={<CatButton text="Continuer" />} path='/' exact />
+        <Route element={<Home />} path='/' exact />
       </Routes>
     </Router>
   );
