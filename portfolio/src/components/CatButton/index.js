@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { CatButtonCont, CatButtonEar, CatButtonTail } from './CatButtonElements'
-import cat_tail from "../../images/cat-tail.png";
-import cat_ear from "../../images/cat-ear.png";
+import cat_tail from "../../images/cat-tail.svg";
+import cat_ear from "../../images/cat-ear.svg";
 
 const CatButton = ({ text }) => {
 

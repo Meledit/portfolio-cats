@@ -6,8 +6,9 @@ export const CatPawElem = styled.img`
     position: absolute;
     top: ${props => props.y + "%"};
     left: ${props => props.x + "%"};
-    transform: translate(-125%, 0%);
+    transform: ${props => props.x > 65 ? "translate(0%, 0%) scaleX(-1)" : "translate(-125%, 0%) scaleX(1)"};
 
     z-index: 999;
-    transition: all 0.15s;
+    //transition: all 0.1s;
+    transition: transform 0.25s cubic-bezier(.76,1.65,0,1);
 `;

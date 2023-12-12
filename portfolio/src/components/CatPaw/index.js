@@ -1,5 +1,5 @@
 import React from 'react'
-import cat_paw from "../../images/cat-paw.png"
+import cat_paw from "../../images/cat-paw.svg"
 import { CatPawElem } from './CatPawElements'
 
 function CatPaw( { mousePosition } ) {

@@ -18,10 +18,6 @@ const Home = () => {
       percentY = 60;
     }
 
-    if (percentX > 52 && percentX < 75) {
-      percentY = 67;
-    }
-
     setMousePosition({ x: percentX, y: percentY });
   };
 
