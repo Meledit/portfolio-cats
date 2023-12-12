@@ -6,7 +6,7 @@ export const CatPawElem = styled.img`
     position: absolute;
     top: ${props => props.y + "%"};
     left: ${props => props.x + "%"};
-    transform: ${props => props.x > 65 ? "translate(0%, 0%) scaleX(-1)" : "translate(-125%, 0%) scaleX(1)"};
+    transform: ${props => props.x > 50 ? "translate(25%, 0%) scaleX(-1)" : "translate(-125%, 0%) scaleX(1)"};
 
     z-index: 999;
     //transition: all 0.1s;
