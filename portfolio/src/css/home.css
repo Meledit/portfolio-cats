@@ -3,6 +3,8 @@
     font-weight: normal;
     line-height: 6rem;
     text-align: center;
+
+    user-select: none;
 }
 
 .homeCont {

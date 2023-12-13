@@ -19,6 +19,7 @@ export const CatButtonCont = styled.div`
     padding: 5px 20px 5px 20px;
 
     cursor: pointer;
+    user-select: none;
 `;
 
 export const CatButtonEar = styled.img`

@@ -11,4 +11,6 @@ export const CatPawElem = styled.img`
     z-index: 999;
     //transition: all 0.1s;
     transition: transform 0.25s cubic-bezier(.76,1.65,0,1);
+
+    user-select: none;
 `;
