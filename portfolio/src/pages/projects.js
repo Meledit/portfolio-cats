@@ -6,6 +6,9 @@ import chronos from "../images/chronos-c.svg";
 import chronos2 from "../images/chronos.png";
 import froggle from "../images/froggle.png";
 import froggle2 from "../images/froggle-big.png";
+import theses2 from "../images/theses.png"
+import theses from "../images/theses-small.png";
+import git from "../images/github-sign.png";
 
 const Projects = ({ setIsVisible }) => {
 
@@ -19,7 +22,16 @@ const Projects = ({ setIsVisible }) => {
         {
             img : chronos2,
             title : "Chronos",
-            logo : chronos,
+            logo : [
+                {
+                    img : git,
+                    link : "https://github.com/Meledit/chronos",
+                },
+                {
+                    img : chronos,
+                    link : "",
+                }
+            ],
             text : "Création d'une plateforme permettant aux élèves, professeurs, secretaire et à toute l'équipe pédagogique de faciliter leur travail et de communiquer plus facilement. Elle permet de consulter son emploi du temps, ses notes, de justifier ses absences, etc ...",
             comp : [
                 "React",
@@ -30,19 +42,38 @@ const Projects = ({ setIsVisible }) => {
         },{
             img : froggle2,
             title : "Froggle",
-            logo : froggle,
-            text : "Version multijoueur du jeu de lettre 'boggle' mais avec des grenouilles partout !",
+            logo : [
+                {
+                    img : git,
+                    link : "https://github.com/Meledit/Froggle",
+                },
+                {
+                    img : froggle,
+                    link : "",
+                }
+            ],
+            text : "Version multijoueur du jeu de lettre 'boggle' mais avec des grenouilles partout ! Jouez des parties de 1 à 4 joueurs et essayez de trouver le plus de mots possible dans le temps impartit ! Montez de niveau et débloquez toutes les récompenses pour être le meilleur !",
             comp : [
                 "React",
+                "TypeScript",
                 "PHP",
                 "C",
                 "Java",
                 "Python"
             ]
         },{
-            img : test,
+            img : theses2,
             title : "Thèses viz",
-            logo : test,
+            logo : [
+                {
+                    img : git,
+                    link : "https://github.com/Meledit/Projet_Abes",
+                },
+                {
+                    img : theses,
+                    link : "",
+                }
+            ],
             text : "Application web permettant de visualiser les données de plus de 1000 thèses sous formes de graphiques et de tableaux. Toutes les données sont récuperées depuis thèses.fr à l'aide d'un script d'extraction.",
             comp : [
                 "PHP",
@@ -63,9 +94,15 @@ const Projects = ({ setIsVisible }) => {
                 <div className='ProjectsInfoTitleCont'>
                     <h3 className='ProjectsInfoTitle'>{ data[selected].title }</h3>
                     <div className='ProjectsInfoTitleLinks'>
-                        <a href=''>
-                            <img src={data[selected].logo} />
-                        </a>
+                    {
+                        data[selected].logo.map((obj, i) => {
+                            return (
+                                <a target='_blank' href={obj.link}>
+                                    <img src={obj.img} />
+                                </a>
+                            )
+                        })
+                    }
                     </div>
                 </div>
 

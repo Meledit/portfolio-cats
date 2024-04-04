@@ -22,13 +22,14 @@ export const CatListSubCont = styled.div`
     transition: all 0.75s cubic-bezier(.58,2.08,.12,.71);
     transform: ${props => props.selected ? "translateY(10px) scale(1.2)" : "translateY(25%) scale(0.9)"};
 
-    &:hover {
-        transform: ${props => props.selected ? "translateY(10px) scale(1.2)" : "translateY(25%) scale(1.1)"};
-    }
+
 `;
 
 export const CatListSubContCat= styled.img`
     width: 100%;
+    transition: all 0.75s cubic-bezier(.58,2.08,.12,.71);
+
+    transform: ${props => props.isHovered ? props.selected ? "translateY(0)" : "translateY(10%)" : "translateY(0)"};
 `;
 
 export const CatListSubContImg = styled.img`
@@ -40,5 +41,5 @@ export const CatListSubContImg = styled.img`
     bottom: 0;
     left: 45%;
     transition: all 0.75s cubic-bezier(.58,2.08,.12,.71);
-    transform: ${props => props.selected ? "translate(-50%, -50%) rotate(3deg) scale(1.1)" : "translate(-50%, 0)"};
+    transform: ${props => props.selected ? "translate(-50%, -50%) rotate(3deg) scale(1.1)" : props.isHovered ? "translate(-50%, -100%) rotate(-3deg) scale(1.5)" : "translate(-50%, 0)"};
 `;

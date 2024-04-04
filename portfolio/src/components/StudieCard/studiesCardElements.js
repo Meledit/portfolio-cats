@@ -19,11 +19,11 @@ export const StudiesCardTitle = styled.div`
 
 export const StudiesCardTitleSubCont = styled.div`
     display: flex;
+    align-items: center;
     gap: 20px;
 `;
 
 export const StudiesCardLogo = styled.img`
-    width: 50px;
     height: 50px;
     font-size: 2rem;
 `;

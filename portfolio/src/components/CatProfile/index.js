@@ -1,8 +1,9 @@
 import React from 'react'
 import { CatProfileCont, CatProfileImg, CatProfileTextCont, CatProfileText, CatProfileWrap } from './catProfileElements';
-import cat_tail from "../../images/cat-tail.svg";
-import cat_ear from "../../images/cat-ear.svg";
 import pfp from "../../images/pfp.png";
+import moi1 from "../../images/moi1.png";
+import moi2 from "../../images/moi2.png";
+import moi3 from "../../images/moi3.png";
 
 const CatProfile = () => {
     const [currentSelection, setCurrentSelection] = React.useState(0);
@@ -11,20 +12,20 @@ const CatProfile = () => {
     const pictures = 
     [
         {
+            src : moi3,
+            text : "une photo de moi1.png"
+        },
+        {
+            src : moi2,
+            text : "une photo de moi3.png"
+        },
+        {
+            src : moi1,
+            text : "une photo de moi3.png"
+        },
+        {
             src : pfp,
-            text : "a picture of me.png"
-        },
-        {
-            src : cat_ear,
-            text : "a picture of me2.png"
-        },
-        {
-            src : pfp,
-            text : "a picture of me3.png"
-        },
-        {
-            src : cat_ear,
-            text : "a picture of me4.png"
+            text : "un dessin par manque de photo.png"
         }
     ]
 
