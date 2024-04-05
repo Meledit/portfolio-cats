@@ -9,6 +9,21 @@ import uge from "../images/uge.png";
 import vdg from "../images/vdg.png";
 import caseware from "../images/caseware.png";
 
+import axios from "../images/axios.png";
+import react from "../images/react.png";
+import ts from '../images/ts.png';
+import js from "../images/js.png";
+import java from "../images/java.png";
+import php from "../images/php.png";
+import python from "../images/py.png";
+import sc from "../images/styled-components.png"
+
+import jira from "../images/jira.png";
+import gh from "../images/github.svg";
+import figma from "../images/figma.svg";
+import sb from "../images/scenebuilder.png";
+import android from "../images/android.jpg";
+
 const Who = ({ setIsVisible }) => {
 
   React.useEffect(() => {
@@ -17,7 +32,7 @@ const Who = ({ setIsVisible }) => {
 
   let data = {
     comms : [
-      "Actuellement grand admissible à ESIEE Paris, je recherche une alternance de 36 mois dans le domaine de l'informatique.",
+      "Actuellement grand admissible à l'école d'ingénieur ESIEE Paris, je recherche une alternance de 36 mois dans le domaine de l'informatique.",
     ],
     intro : [
       "Je suis un étudiant de 19 ans en troisième année d'un BUT en informatique, j'ai une passion profonde pour le développement front-end, la conception UX et l'art.",
@@ -95,7 +110,75 @@ const Who = ({ setIsVisible }) => {
           </h2>
 
           <div className='WhoSkillsList'>
-            
+            <div className='WhoSkillCont'>
+              <h3 className='WhoSkillTitle'>
+                Techno
+              </h3>
+
+              <ul className='WhoSkillList'>
+                <li className='WhoSkillImg'>
+                  <img src={react} alt='React' />
+                </li>
+                <li className='WhoSkillImg'>
+                  <img src={ts} alt='Typescript' />
+                </li>
+                <li className='WhoSkillImg'>
+                  <img src={js} alt='Javascript' />
+                </li>
+                <li className='WhoSkillImg'>
+                  <img src={sc} alt='styled-components' />
+                </li>
+                <li className='WhoSkillImg'>
+                  <img src={axios} alt='Axios' />
+                </li>
+                <li className='WhoSkillImg'>
+                  <img src={php} alt='PHP' />
+                </li>
+                <li className='WhoSkillImg'>
+                  <img src={python} alt='Python' />
+                </li>
+                <li className='WhoSkillImg'>
+                  <img src={java} alt='Java' />
+                </li>
+              </ul>   
+            </div>
+
+            <div className='WhoSkillCont'>
+              <h3 className='WhoSkillTitle'>
+                  Logiciels
+              </h3>
+
+              <ul className='WhoSkillList'>
+                <li className='WhoSkillImg'>
+                  <img src={figma} alt='figma' />
+                </li>
+                <li className='WhoSkillImg'>
+                  <img src={gh} alt='Github' />
+                </li>
+                <li className='WhoSkillImg'>
+                  <img src={sb} alt='Scene builder' />
+                </li>
+                <li className='WhoSkillImg'>
+                  <img src={android} alt='android studio' />
+                </li>
+                <li className='WhoSkillImg'>
+                  <img src={jira} alt='jira softwares' />
+                </li>
+              </ul>  
+            </div>
+
+            <div className='WhoSkillCont'>
+              <h3 className='WhoSkillTitle'>
+                  Autres
+              </h3>
+
+              <ul className='WhoSkillClassicList'>
+                <li>TOEIC : 970 / 990</li>
+                <li>+10 ans de dessin</li>
+                <li>Expérience en montage video</li>
+                <li>Je sais résoudre un rubiks cube en 2 minutes</li>
+              </ul>  
+            </div>
           </div> 
         </div>
       </div>

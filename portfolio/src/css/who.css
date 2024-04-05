@@ -35,7 +35,6 @@
 .WhoSkillsContent {
     width: 80%;
     margin: 0 auto;
-    height: 100vh;
     animation: appearAnim 1s cubic-bezier(.58,2.08,.12,.71);
 }
 
@@ -48,6 +47,61 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+
+.WhoSkillCont {
+    color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.WhoSkillsList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.WhoSkillTitle {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.WhoSkillList {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+.WhoSkillImg {
+    overflow: hidden;
+    width: 75px;
+    height: fit-content;
+    border-radius: 10px;
+    user-select: none;
+    transition: all 0.5s cubic-bezier(.58,2.08,.12,.71);
+}
+
+.WhoSkillClassicList {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding-left: 40px;
+    font-size: 1.25rem;
+}
+
+.WhoSkillImg:hover {
+    transform: scale(1.1) rotate(7deg);
+}
+
+.WhoSkillImg img {
+    width: 100%;
 }
 
 .WhoIntroText p {
