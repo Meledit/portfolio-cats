@@ -9,6 +9,8 @@ Pour voir le contenu du site, clonez le projet sur votre machine. Ensuite dirige
 - npm install
 - npm start
 
+```
  /\_/\
 ( o.o )
  > ^ <  Bye ! 
+```
