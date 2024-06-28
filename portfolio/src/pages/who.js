@@ -8,6 +8,7 @@ import logo from "../images/pfp.png";
 import uge from "../images/uge.png";
 import vdg from "../images/vdg.png";
 import caseware from "../images/caseware.png";
+import cv from "../images/CV_2024-06-28_NIDAL_IDRISSI.pdf"
 
 const Who = ({ setIsVisible }) => {
 
@@ -84,6 +85,9 @@ const Who = ({ setIsVisible }) => {
               );
             })
           }
+          <p>
+            <a href={cv} target={"_blank"}>Lire mon CV</a>
+          </p>
         </div>
       </div>
 
