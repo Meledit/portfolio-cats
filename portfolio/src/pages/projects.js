@@ -84,7 +84,7 @@ const Projects = ({ setIsVisible }) => {
 
   return (
     <div className='ProjectsCont'>
-        <h2 className='ProjectsTitle'>My projects</h2>
+        <h2 className='ProjectsTitle'>Mes projets</h2>
         <div className='ProjectsContent'>
             <div className='PititsChatsCont'>
                 <CatList lst={data} selected={selected} onSelect={(setSelected)} />
