@@ -37,7 +37,7 @@ const Who = ({ setIsVisible }) => {
     ],
     intro : [
       "Je suis un étudiant de 19 ans en troisième année d'un BUT en informatique, j'ai une passion profonde pour le développement front-end, la conception UX et l'art.",
-      "Je prends plaisir à jouer à des jeux vidéo, et deux de mes préférés de tous les temps sont Persona 5 et Zelda. Je trouve que ces jeux offrent non seulement un moyen amusant et engageant de se détendre, mais ils m'inspirent également à penser de manière créative et à sortir des sentiers battus en matière de conception et de résolution de problèmes.",
+      "Je prends plaisir à développer des sites web interactifs, intuitifs et visuellement intéressants, souvent en React. J'aime également jouer à des jeux vidéo, et mes deux préférés sont Persona 5 et Zelda. Je trouve que ces jeux offrent non seulement un moyen amusant et engageant de se détendre, mais ils m'inspirent également à penser de manière créative et à sortir des sentiers battus en matière de conception et de résolution de problèmes."
     ],
     introTitle : "Qui suis-je ?",
     skillsTitle : "Mes Compétences",
